@@ -13,12 +13,4 @@ class TableViewCell: UITableViewCell {
     func configure(name: String) {
         label.text = name
     }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
 }
