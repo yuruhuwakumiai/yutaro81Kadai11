@@ -33,10 +33,10 @@ class NextViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         exitBySegue(prefectureName: placeData[indexPath.row])
-        performSegue(withIdentifier: "first", sender: self)
     }
 
     private func exitBySegue(prefectureName: String) {
         selectedPrefectureName = prefectureName
+        performSegue(withIdentifier: "first", sender: self)
     }
 }
